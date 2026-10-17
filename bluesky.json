@@ -1,0 +1,11 @@
+{
+ "id": "bluesky",
+ "name": "Bluesky",
+ "rank": 18,
+ "engine": "bluesky",
+ "version": 1,
+ "weight": 0.5,
+ "match": "bsky\\.app/profile/[^/]+/post/([a-z0-9]+)",
+ "icon": "bluesky.png",
+ "script": "bluesky.js"
+}
