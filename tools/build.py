@@ -32,6 +32,9 @@ def main():
                     sys.exit(f"{f}: missing file {ref}")
             sources.append(f)
     index = {"name": NAME, "key": public_key(), "files": files, "sources": sources}
+    others = os.path.join(ROOT, "tools", "repos.json")
+    if os.path.exists(others):
+        index["repos"] = json.load(open(others))
     raw = json.dumps(index, indent=1, sort_keys=True).encode()
     open(os.path.join(ROOT, "index.json"), "wb").write(raw)
     sig = subprocess.run(["openssl", "dgst", "-sha256", "-sign", KEY], input=raw, check=True, capture_output=True).stdout

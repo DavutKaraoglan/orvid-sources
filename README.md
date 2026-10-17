@@ -6,6 +6,14 @@ Source repository for [Orvid](https://github.com/DavutKaraoglan/orvid). Orvid sh
 https://raw.githubusercontent.com/DavutKaraoglan/orvid-sources/main/
 ```
 
+## Other repositories
+
+Orvid also lists these under Filters → Repositories once this repository is added.
+
+| Repository | Link |
+|---|---|
+| Orvid secret (18+) | `https://raw.githubusercontent.com/DavutKaraoglan/orvid-sources-secret/main/` |
+
 ## Source format
 
 Each source is one JSON file with an `id`, a `name` and one of three bodies:

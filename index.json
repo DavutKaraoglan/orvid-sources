@@ -30,6 +30,13 @@
  },
  "key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2BC48UA8h0lDaMwgD6YvHqe75tEZIvpAwKGxrbYXLTYiSXECdPEBCjDigd8+bYSDoDq1PsnJJd3Z4HzVBmnHzg==",
  "name": "Orvid sources",
+ "repos": [
+  {
+   "adult": true,
+   "name": "Orvid secret",
+   "url": "https://raw.githubusercontent.com/DavutKaraoglan/orvid-sources-secret/main/"
+  }
+ ],
  "sources": [
   "aparat.json",
   "archive.json",
