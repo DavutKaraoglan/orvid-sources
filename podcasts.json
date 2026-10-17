@@ -1,0 +1,9 @@
+{
+ "id": "podcasts",
+ "name": "Podcasts",
+ "version": 1,
+ "weight": 0.4,
+ "match": "podcasts\\.apple\\.com/[^#]*\\?i=\\d+[^#]*#",
+ "icon": "podcasts.png",
+ "script": "podcasts.js"
+}

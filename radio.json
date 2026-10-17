@@ -1,0 +1,9 @@
+{
+ "id": "radio",
+ "name": "Radio Browser",
+ "version": 1,
+ "weight": 0.4,
+ "match": "radio-browser\\.info/history/([0-9a-f-]{36})",
+ "icon": "radio.png",
+ "script": "radio.js"
+}

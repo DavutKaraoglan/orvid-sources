@@ -1,0 +1,9 @@
+{
+ "id": "iptv",
+ "name": "Live TV (iptv-org)",
+ "version": 1,
+ "weight": 0.4,
+ "match": "iptv-org\\.github\\.io/watch#",
+ "icon": "iptv.png",
+ "script": "iptv.js"
+}

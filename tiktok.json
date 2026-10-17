@@ -1,0 +1,10 @@
+{
+ "id": "tiktok",
+ "name": "TikTok",
+ "engine": "tiktok",
+ "version": 1,
+ "weight": 0.6,
+ "match": "tiktok\\.com/(?:@[^/?#]+/)?video/(\\d+)|(?:vm|vt)\\.tiktok\\.com/[A-Za-z0-9]+",
+ "icon": "tiktok.png",
+ "script": "tiktok.js"
+}
