@@ -1,6 +1,6 @@
 {
  "id": "mastodon",
  "name": "Mastodon",
- "rank": 20,
+ "rank": 21,
  "engine": "mastodon"
 }
