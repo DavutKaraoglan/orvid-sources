@@ -22,7 +22,7 @@ function search(query, next) {
     return {
       url: "https://iptv-org.github.io/watch#" + encodeURIComponent(s.url) + "|" + encodeURIComponent(s.referrer || ""),
       title: s.title || s.channel,
-      author: [country ? country[1].toUpperCase() : "", s.quality || ""].filter(function (x) { return x; }).join(" · "),
+      author: [country ? country[1].toUpperCase() : "", s.quality || ""].filter(function (x) { return x; }).join(", "),
       duration: -1
     };
   });

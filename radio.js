@@ -18,7 +18,7 @@ function item(s) {
   return {
     url: "https://www.radio-browser.info/history/" + s.stationuuid,
     title: (s.name || "").trim(),
-    author: [s.country, tags].filter(function (x) { return x; }).join(" · "),
+    author: [s.country, tags].filter(function (x) { return x; }).join(", "),
     duration: -1,
     views: s.clickcount,
     thumb: /^https:/.test(s.favicon || "") ? s.favicon : null
