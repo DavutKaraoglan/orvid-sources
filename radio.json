@@ -1,7 +1,7 @@
 {
  "id": "radio",
  "name": "Radio Browser",
- "rank": 26,
+ "rank": 27,
  "version": 1,
  "weight": 0.4,
  "match": "radio-browser\\.info/history/([0-9a-f-]{36})",

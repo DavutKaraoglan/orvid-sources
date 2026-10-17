@@ -1,7 +1,7 @@
 {
  "id": "coub",
  "name": "Coub",
- "rank": 22,
+ "rank": 23,
  "version": 1,
  "weight": 0.5,
  "match": "coub\\.com/(?:view|embed)/([A-Za-z0-9]+)",

@@ -1,7 +1,7 @@
 {
  "id": "bluesky",
  "name": "Bluesky",
- "rank": 18,
+ "rank": 17,
  "engine": "bluesky",
  "version": 1,
  "weight": 0.5,
