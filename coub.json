@@ -1,0 +1,9 @@
+{
+ "id": "coub",
+ "name": "Coub",
+ "version": 1,
+ "weight": 0.5,
+ "match": "coub\\.com/(?:view|embed)/([A-Za-z0-9]+)",
+ "icon": "coub.png",
+ "script": "coub.js"
+}

@@ -1,0 +1,5 @@
+{
+ "id": "mediathek",
+ "name": "ARD & ZDF Mediathek",
+ "engine": "mediathek"
+}

@@ -1,0 +1,5 @@
+{
+ "id": "peertube",
+ "name": "PeerTube",
+ "engine": "peertube"
+}
