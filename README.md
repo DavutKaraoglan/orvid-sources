@@ -24,7 +24,7 @@ Each source is one JSON file with an `id`, a `name` and one of three bodies:
 
 `match` is the regular expression for the source's video links, `adult` marks 18+ sources, `weight` (0.1 to 1) sets how high results rank and `lang` limits a source to queries in one script (`cyrillic`, `arabic`, `hangul`).
 
-For sites that answer slowly over Tor, `html.timeout` (5 to 60 seconds, default 15) sets how long Orvid waits, and `hedge` (1 to 6) sends each request over that many Tor circuits at once. Orvid keeps the circuit that answered first and plays the video through it.
+For sites that answer slowly over Tor, `html.timeout` (5 to 60 seconds, default 15) sets how long Orvid waits, `html.maxHeight` caps the video quality, and `hedge` (1 to 6) sends each request over that many Tor circuits at once. Orvid keeps the circuit that answered first and plays the video through it.
 
 `search` returns `{items: [{url, title, author, duration, views, thumb, date}], next}`. `resolve` returns `{url, hls, referer, title, author}`.
 
