@@ -1,5 +1,6 @@
 {
  "id": "imgur",
  "name": "Imgur",
+ "rank": 10,
  "engine": "imgur"
 }

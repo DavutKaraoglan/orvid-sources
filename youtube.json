@@ -1,5 +1,6 @@
 {
  "id": "youtube",
  "name": "YouTube",
+ "rank": 1,
  "engine": "youtube"
 }

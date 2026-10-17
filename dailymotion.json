@@ -1,5 +1,6 @@
 {
  "id": "dailymotion",
  "name": "Dailymotion",
+ "rank": 8,
  "engine": "dailymotion"
 }

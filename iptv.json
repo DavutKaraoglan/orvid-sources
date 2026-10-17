@@ -1,6 +1,7 @@
 {
  "id": "iptv",
  "name": "Live TV (iptv-org)",
+ "rank": 26,
  "version": 1,
  "weight": 0.4,
  "match": "iptv-org\\.github\\.io/watch#",

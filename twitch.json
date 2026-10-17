@@ -1,5 +1,6 @@
 {
  "id": "twitch",
  "name": "Twitch",
+ "rank": 5,
  "engine": "twitch"
 }

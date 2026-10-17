@@ -1,5 +1,6 @@
 {
  "id": "steam",
  "name": "Steam",
+ "rank": 6,
  "engine": "steam"
 }

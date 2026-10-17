@@ -1,6 +1,7 @@
 {
  "id": "tiktok",
  "name": "TikTok",
+ "rank": 3,
  "engine": "tiktok",
  "version": 1,
  "weight": 0.6,

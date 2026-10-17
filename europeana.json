@@ -1,5 +1,6 @@
 {
  "id": "europeana",
  "name": "Europeana",
+ "rank": 28,
  "engine": "europeana"
 }

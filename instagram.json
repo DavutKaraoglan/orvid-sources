@@ -1,6 +1,7 @@
 {
  "id": "instagram",
  "name": "Instagram",
+ "rank": 2,
  "engine": "instagram",
  "version": 1,
  "weight": 0.6,
