@@ -1,7 +1,7 @@
 {
  "id": "podcasts",
  "name": "Podcasts",
- "rank": 18,
+ "rank": 19,
  "version": 1,
  "weight": 0.4,
  "match": "podcasts\\.apple\\.com/[^#]*\\?i=\\d+[^#]*#",

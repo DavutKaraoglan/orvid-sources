@@ -1,0 +1,11 @@
+{
+ "id": "tumblr",
+ "name": "Tumblr",
+ "rank": 12,
+ "engine": "tumblr",
+ "version": 1,
+ "weight": 0.5,
+ "match": "(?:[A-Za-z0-9-]+\\.tumblr\\.com/post/|//(?:www\\.)?tumblr\\.com/(?:blog/view/)?[A-Za-z0-9-]+/)(\\d+)",
+ "icon": "tumblr.png",
+ "script": "tumblr.js"
+}
