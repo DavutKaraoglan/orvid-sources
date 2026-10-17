@@ -7,18 +7,23 @@ var ENGINES = [
   "https://lite.duckduckgo.com/lite/?q="
 ];
 
+var failing = {};
+
 function links(text, page) {
   var q = encodeURIComponent(text) + (page > 0 ? "&s=" + page * 30 + "&dc=" + (page * 30 + 1) : "");
   var last;
   for (var e = 0; e < ENGINES.length; e++) {
+    if (failing[e]) continue;
     var html;
     try {
       html = http.get(ENGINES[e] + q);
     } catch (err) {
+      failing[e] = true;
       last = err;
       continue;
     }
     if (html.indexOf("anomaly-modal") >= 0 || html.indexOf("bots use DuckDuckGo") >= 0) {
+      failing[e] = true;
       last = new Error("Captcha needed (duckduckgo)");
       continue;
     }
@@ -26,7 +31,7 @@ function links(text, page) {
     while ((m = re.exec(html))) out.push(decodeURIComponent(m[1]));
     return out;
   }
-  throw last;
+  throw last || new Error("Captcha needed (duckduckgo)");
 }
 
 function ddg(query, page) {

@@ -1,0 +1,10 @@
+{
+ "id": "instagram",
+ "name": "Instagram",
+ "engine": "instagram",
+ "version": 1,
+ "weight": 0.6,
+ "match": "instagram\\.com/(?:[^/?#]+/)?(?:reels?|p|tv)/([A-Za-z0-9_-]{6,})",
+ "icon": "instagram.png",
+ "script": "instagram.js"
+}
