@@ -1,9 +1,9 @@
 # Orvid sources
 
-Source repository for [Orvid](https://github.com/DavutKaraoglan/orvid). Orvid ships without sources. To add this repository, open Filters → Repositories → Add repository in Orvid and paste:
+Source repository for [Orvid](https://github.com/mankidev/orvid). Orvid ships without sources. To add this repository, open Filters → Repositories → Add repository in Orvid and paste:
 
 ```
-https://raw.githubusercontent.com/DavutKaraoglan/orvid-sources/main/
+https://raw.githubusercontent.com/mankidev/orvid-sources/main/
 ```
 
 ## Other repositories
@@ -12,7 +12,7 @@ Orvid also lists these under Filters → Repositories once this repository is ad
 
 | Repository | Link |
 |---|---|
-| Orvid secret (18+) | `https://raw.githubusercontent.com/DavutKaraoglan/orvid-sources-secret/main/` |
+| Orvid secret (18+) | `https://raw.githubusercontent.com/mankidev/orvid-sources-secret/main/` |
 
 ## Source format
 
