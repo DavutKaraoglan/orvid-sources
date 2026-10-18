@@ -3,7 +3,7 @@
  "name": "Instagram",
  "rank": 2,
  "engine": "instagram",
- "version": 1,
+ "version": 2,
  "weight": 0.6,
  "match": "instagram\\.com/(?:[^/?#]+/)?(?:reels?|p|tv)/([A-Za-z0-9_-]{6,})",
  "icon": "instagram.png",

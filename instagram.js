@@ -115,6 +115,7 @@ function resolve(url) {
   for (var i = 0; i < FIXERS.length; i++) {
     try {
       var to = http.check(FIXERS[i] + c + (i == 0 ? "/" : "/1"), BOT).location;
+      if (to && /\.(?:jpe?g|webp|heic)(?:\?|$)/.test(to)) throw new Error("video unavailable without login");
       if (to && /\.mp4(?:\?|$)/.test(to)) {
         var info = "";
         try {
@@ -130,6 +131,7 @@ function resolve(url) {
       }
       last = new Error("video unavailable");
     } catch (e) {
+      if (/without login/.test(String(e))) throw e;
       last = e;
     }
   }
