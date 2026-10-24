@@ -61,9 +61,6 @@
   "twitter.js": "1aad31e63e4464699fa04f60ef54769b6ace247575fc84f836748050274c30a3",
   "twitter.json": "7a48a5b16855e337d1b1d0da45910554599a2a5d834df61bd098551f944a373c",
   "twitter.png": "8d44f4a6c7f77aa9ba85d79fcb49fdf50b33f936798edab58ee38c09d733bcbe",
-  "vbox7.js": "77cb59bae108d39346d61ba0d10a9e9b5521e549275d349bcd88f1d90c5ed62c",
-  "vbox7.json": "ef2195e684249295873df2a0a6e4f3e0046d3941d4213f68121cd37b62486cd6",
-  "vbox7.png": "00673841ebfafc770835bf1aecc05a8f54fb47e0108b2e390a8152fe6a22b5a7",
   "vk.json": "3fb328fb3c3657ec5b144e75eb439a51395a66fd8f66b3da72012b5e12242568",
   "youtube.json": "f7800438cace9e0e71b1650abb9d0a4819cef4b4f17419805b1e66139bbab6f5"
  },
@@ -112,7 +109,6 @@
   "tumblr.json",
   "twitch.json",
   "twitter.json",
-  "vbox7.json",
   "vk.json",
   "youtube.json"
  ]
