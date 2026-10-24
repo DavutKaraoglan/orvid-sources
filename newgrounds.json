@@ -1,0 +1,10 @@
+{
+ "id": "newgrounds",
+ "name": "Newgrounds",
+ "rank": 34,
+ "version": 1,
+ "weight": 0.5,
+ "match": "newgrounds\\.com/portal/view/(\\d+)",
+ "icon": "newgrounds.png",
+ "script": "newgrounds.js"
+}
