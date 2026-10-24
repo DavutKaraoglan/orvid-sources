@@ -25,6 +25,18 @@ function btoa(s) {
   return out;
 }
 
+var NAMED = { uuml: "ü", Uuml: "Ü", ouml: "ö", Ouml: "Ö", ccedil: "ç", Ccedil: "Ç", auml: "ä", Auml: "Ä", szlig: "ß",
+  eacute: "é", Eacute: "É", egrave: "è", ecirc: "ê", aacute: "á", agrave: "à", acirc: "â", iacute: "í", icirc: "î",
+  oacute: "ó", ocirc: "ô", uacute: "ú", ucirc: "û", ntilde: "ñ", Ntilde: "Ñ", hellip: "…", ndash: "–", mdash: "—",
+  rsquo: "’", lsquo: "‘", rdquo: "”", ldquo: "“", amp: "&", quot: "\"", apos: "'", lt: "<", gt: ">", nbsp: " " };
+
+function text(s) {
+  return String(s || "").replace(/&#x([0-9a-f]+);/gi, function (m, h) { return String.fromCharCode(parseInt(h, 16)); })
+      .replace(/&#(\d+);/g, function (m, d) { return String.fromCharCode(parseInt(d, 10)); })
+      .replace(/&([a-zA-Z]+);/g, function (m, n) { return NAMED.hasOwnProperty(n) ? NAMED[n] : m; })
+      .replace(/\s+/g, " ").trim();
+}
+
 function search(query, next) {
   var root = http.json(SITE + "/search?q=" + encodeURIComponent(query), { "X-Requested-With": "fetch", "Content-Type": "application/json" });
   var items = [];
@@ -37,7 +49,7 @@ function search(query, next) {
     var thumb = h.match(/ src="(https:\/\/[^"]+)"/);
     items.push({
       url: link[1],
-      title: (title ? util.unescape(title[1]).trim() : "") + (year ? " (" + year[1] + ")" : ""),
+      title: (title ? text(title[1]) : "") + (year ? " (" + year[1] + ")" : ""),
       author: "",
       duration: -1,
       views: -1,
@@ -83,5 +95,5 @@ function resolve(url) {
   var media = decode(html, host);
   if (!media || !/^https?:\/\//.test(media)) throw new Error("video unavailable");
   var title = page.match(/<meta property="og:title" content="([^"]*)"/);
-  return { url: media, hls: true, referer: "https://" + host + "/", title: title ? util.unescape(title[1]) : "" };
+  return { url: media, hls: true, referer: "https://" + host + "/", title: title ? text(title[1]) : "" };
 }
