@@ -38,6 +38,8 @@ function text(s) {
 }
 
 function search(query, next) {
+  query = query.replace(/(^|\s)(film|filmi|filmini|movie|movies)(?=\s|$)/gi, " ").replace(/\s+/g, " ").trim();
+  if (!query) return { items: [], next: null };
   var root = http.json(SITE + "/search?q=" + encodeURIComponent(query), { "X-Requested-With": "fetch", "Content-Type": "application/json" });
   var items = [];
   (root.results || []).forEach(function (h) {
@@ -53,6 +55,7 @@ function search(query, next) {
       author: "",
       duration: -1,
       views: -1,
+      kind: "movie",
       thumb: thumb ? thumb[1].replace("/images/thumb/poster/", "/images/list/poster/").replace(/(@2x)?\.webp$/, "@2x.webp") : null
     });
   });
