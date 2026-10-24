@@ -3,7 +3,7 @@
  "name": "X",
  "rank": 4,
  "engine": "twitter",
- "version": 1,
+ "version": 2,
  "weight": 0.6,
  "match": "(?:x|twitter)\\.com/[A-Za-z0-9_]{1,15}/status/(\\d+)",
  "icon": "twitter.png",

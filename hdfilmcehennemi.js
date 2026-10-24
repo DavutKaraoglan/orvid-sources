@@ -41,7 +41,7 @@ function search(query, next) {
       author: "",
       duration: -1,
       views: -1,
-      thumb: thumb ? thumb[1] : null
+      thumb: thumb ? thumb[1].replace("/images/thumb/poster/", "/images/list/poster/").replace(/(@2x)?\.webp$/, "@2x.webp") : null
     });
   });
   return { items: items, next: null };

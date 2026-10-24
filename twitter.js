@@ -36,7 +36,7 @@ function timeline(html) {
   var items = [];
   entries.forEach(function (e) {
     var t = (e.content || {}).tweet;
-    if (!t || !t.user) return;
+    if (!t || !t.user || t.possibly_sensitive || t.user.possibly_sensitive) return;
     var media = ((t.extended_entities || {}).media || []).filter(function (x) { return x.type == "video"; });
     if (!media.length) return;
     var v = media[0];
@@ -64,7 +64,8 @@ function fromFx(body) {
   } catch (e) {
     return null;
   }
-  var videos = t && t.media && t.media.videos;
+  if (!t || t.possibly_sensitive || t.sensitive) return null;
+  var videos = t.media && t.media.videos;
   if (!videos || !videos.length) return null;
   return {
     url: "https://x.com/" + t.author.screen_name + "/status/" + t.id,
