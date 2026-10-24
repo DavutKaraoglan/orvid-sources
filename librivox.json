@@ -1,0 +1,10 @@
+{
+ "id": "librivox",
+ "name": "LibriVox",
+ "rank": 37,
+ "version": 1,
+ "weight": 0.4,
+ "match": "librivox\\.org/[a-z0-9-]+/$",
+ "icon": "librivox.png",
+ "script": "librivox.js"
+}
