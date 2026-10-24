@@ -1,0 +1,10 @@
+{
+ "id": "ardsounds",
+ "name": "ARD Sounds",
+ "rank": 41,
+ "version": 1,
+ "weight": 0.4,
+ "match": "(?:ardsounds|ardaudiothek)\\.de/episode/(?:[^/]+/)?(urn:ard:episode:[0-9a-f]+)",
+ "icon": "ardsounds.png",
+ "script": "ardsounds.js"
+}
