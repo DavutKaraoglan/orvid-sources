@@ -2,6 +2,9 @@
  "files": {
   "aparat.json": "960722a3dbf61c1c954e41501dafbb04ac3fac31689db5cd3098feb119eba888",
   "archive.json": "aa1c804a0bc016dae36d4b74d28f6faa62df8d128c99948063ddd773ea341dba",
+  "audius.js": "474c4743b56620f6b71dd520a720eefd0caa11f47f2a0c44c5322079d6ed287e",
+  "audius.json": "308256ca35dacbf170b5b076fc333f63b400709275bd2dfdb25532281502ec35",
+  "audius.png": "e3563e0675bf7653aa4796d14e4d88d6b72fa8034775ef2756528d2c64964619",
   "bitchute.json": "b4b7aafc959233ef22bfbf74a03c2bc87804bf3b8c8de0144735e58767c74b62",
   "bluesky.js": "bf7b1ac71a6c2d79f6b171fd08aca69e3297bfcc5b7665b6ac64a5350d79bba9",
   "bluesky.json": "8a8a9187661ab7e973bc9ab9b15f9658f2bc4ed93831e3460da24bc0ca38b30c",
@@ -67,6 +70,7 @@
  "sources": [
   "aparat.json",
   "archive.json",
+  "audius.json",
   "bitchute.json",
   "bluesky.json",
   "ccc.json",
