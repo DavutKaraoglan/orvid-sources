@@ -12,6 +12,7 @@ Orvid also lists these under Filters → Repositories once this repository is ad
 
 | Repository | Link |
 |---|---|
+| Orvid films | `https://raw.githubusercontent.com/mankidev/orvid-films/main/` |
 | Orvid secret (18+) | `https://raw.githubusercontent.com/mankidev/orvid-sources-secret/main/` |
 
 ## Source format
@@ -26,7 +27,7 @@ Each source is one JSON file with an `id`, a `name` and one of three bodies:
 
 For sites that answer slowly over Tor, `html.timeout` (5 to 60 seconds, default 15) sets how long Orvid waits, `html.maxHeight` caps the video quality, and `hedge` (1 to 6) sends each request over that many Tor circuits at once. Orvid keeps the circuit that answered first and plays the video through it.
 
-`search` returns `{items: [{url, title, author, duration, views, thumb, date}], next}`. `resolve` returns `{url, hls, referer, title, author}`.
+`search` returns `{items: [{url, title, author, duration, views, thumb, date}], next}`. `resolve` returns `{url, hls, referer, title, author, subtitles}`, where `subtitles` is a list of `{url, lang, label}` WebVTT or SRT files.
 
 ## Build
 

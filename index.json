@@ -14,9 +14,6 @@
   "coub.png": "27c921501a4f7eb8a48909746d97d7b26115ad1a3c00a81b537f3d8ef0d13375",
   "dailymotion.json": "3dadd25fa2851eb8c191a5e1c2186e8cf33ab9ede229821ea349838a2eb4a9c2",
   "europeana.json": "858d385f73dc6c23e5b0a05eebd7e037366aa919603fce9280542174e0df011e",
-  "hdfilmcehennemi.js": "3d72a8a97629af9f509102b7143bff78eb35cd05993573448b12f90ef02e9cdd",
-  "hdfilmcehennemi.json": "67889738821798206518068303e4866a89f13058dd48d96b94fea912cbe759d6",
-  "hdfilmcehennemi.png": "a84bc50c3025cbef7df610349c85537fa41d6b69a2510ac9930cf927cc5dbe31",
   "imgur.json": "256bd092aae90c74e8094f82a29424e8e02f51db401e6bd3e2f51ef94edaad19",
   "instagram.js": "d865a0977e682a3f4736c27797cf4cda9050ff070a3ffa6ac6bc550243690426",
   "instagram.json": "21a986a71cf18496feef26955a41f74824951d75ec2c67d941b95331fd2e3f0c",
@@ -62,6 +59,11 @@
    "adult": true,
    "name": "Orvid secret",
    "url": "https://raw.githubusercontent.com/mankidev/orvid-sources-secret/main/"
+  },
+  {
+   "adult": false,
+   "name": "Orvid films",
+   "url": "https://raw.githubusercontent.com/mankidev/orvid-films/main/"
   }
  ],
  "sources": [
@@ -75,7 +77,6 @@
   "coub.json",
   "dailymotion.json",
   "europeana.json",
-  "hdfilmcehennemi.json",
   "imgur.json",
   "instagram.json",
   "iptv.json",
