@@ -1,0 +1,10 @@
+{
+ "id": "openverse",
+ "name": "Openverse",
+ "rank": 39,
+ "version": 1,
+ "weight": 0.4,
+ "match": "openverse\\.org/(?:[a-z-]+/)?audio/([0-9a-f-]{36})",
+ "icon": "openverse.png",
+ "script": "openverse.js"
+}
