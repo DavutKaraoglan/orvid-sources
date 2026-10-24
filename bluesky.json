@@ -3,7 +3,7 @@
  "name": "Bluesky",
  "rank": 18,
  "engine": "bluesky",
- "version": 1,
+ "version": 2,
  "weight": 0.5,
  "match": "bsky\\.app/profile/[^/]+/post/([a-z0-9]+)",
  "icon": "bluesky.png",

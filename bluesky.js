@@ -7,7 +7,20 @@ function video(embed) {
   return null;
 }
 
+var ADULT = { "porn": 1, "sexual": 1, "nudity": 1, "sexual-figurative": 1, "graphic-media": 1 };
+
+function flagged(list) {
+  for (var i = 0; list && i < list.length; i++) if (ADULT[list[i].val]) return true;
+  return false;
+}
+
+function adult(p) {
+  var self = (p.record || {}).labels;
+  return flagged(p.labels) || flagged(self && self.values) || flagged((p.author || {}).labels);
+}
+
 function item(p) {
+  if (adult(p)) return null;
   var v = video(p.embed);
   if (!v || !v.playlist) return null;
   var rkey = p.uri.split("/").pop();
